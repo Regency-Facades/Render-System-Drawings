@@ -2,17 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Summit - Render System Drawings</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 24px 32px;
+            border-bottom: 1px solid #e1e4e8;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-content h1 {
+            margin: 0 0 4px 0;
+            font-size: 24px;
+            color: #1a202c;
+        }
+        .header-content h2 {
+            margin: 0;
+            font-size: 16px;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        header img {
+            max-height: 50px;
+            width: auto;
+        }
+        main {
+            max-width: 800px;
+            width: 100%;
+            margin: 40px auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+            flex: 1;
+        }
+        .card-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 12px;
+        }
+        .card-list li a {
+            display: block;
+            background: #ffffff;
+            padding: 16px 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            color: #2b6cb0;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+            transition: all 0.2s ease;
+        }
+        .card-list li a:hover {
+            background: #ebf8ff;
+            border-color: #3182ce;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        footer {
+            background-color: #ffffff;
+            border-top: 1px solid #e1e4e8;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #718096;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <img src="logo.png" alt="Regency Facades Logo" style="max-width: 200px;">
-        <h1>The Summit - Render System Drawings</h1>
-        <h2>Flat 202</h2>
+        <div class="header-content">
+            <h1>The Summit - Render System Drawings</h1>
+            <h2>Flat 202</h2>
+        </div>
+        <img src="logo.png" alt="Regency Facades Logo">
     </header>
 
     <main>
-        <ul>
+        <ul class="card-list">
             <li><a href="./Balcony%20Interface%20-%20Render%20System.pdf" target="_blank">Balcony Interface</a></li>
             <li><a href="./Coping%20and%20Base%20detail%20-%20Render%20System.pdf" target="_blank">Coping and Base Detail</a></li>
             <li><a href="./Door%20Jamb%20and%20Head%20detail%20-%20Render%20System.pdf" target="_blank">Door Jamb and Head Detail</a></li>
@@ -30,5 +111,6 @@
     <footer>
         <p>Regency Facades — The Summit Project — Project Number 1761</p>
     </footer>
+
 </body>
 </html>
